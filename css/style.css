@@ -1,0 +1,79 @@
+body {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: aquamarine;
+}
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.header__name, .header__coursework {
+  filter: drop-shadow(8px 5px 6px black);
+  color: black;
+  font-weight: 700;
+  padding: 0 15px;
+}
+.header__name {
+  font-size: 24px;
+}
+.header__coursework {
+  font-size: 18px;
+}
+
+main {
+  width: 500px;
+  margin: 20px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  width: 100%;
+  margin: 10px 0;
+}
+
+#startbtn {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 678px) {
+  .header__container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+  .header__name {
+    font-size: 18px;
+  }
+  .header__coursework {
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+  }
+}
+@media (max-width: 500px) {
+  main {
+    width: 310px;
+  }
+
+  #startbtn {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
